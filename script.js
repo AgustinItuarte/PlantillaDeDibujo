@@ -12,11 +12,15 @@ function crearGrid(cuboPequeño, numCubos) {
     
     for(let i = 0; i < numCubos; i++) {
         const div1 = document.createElement('div');
-        div1.setAttribute('style', `width: ${cuboPequeño}px; height: ${cuboPequeño}px; border: 1px solid black`);
+        div1.setAttribute('style', `width: ${cuboPequeño}px; height: ${cuboPequeño}px; border: 1px solid white`);
         container.appendChild(div1);
-
+        let opacidad = 0.50
         div1.addEventListener('mouseover', () => { // Agrega atributo de background-color cada vez que el mouse pasa por encima de una cuadrado.
-            div1.setAttribute('style', `width: ${cuboPequeño}px; height: ${cuboPequeño}px; border: 1px solid black; background-color: black`);
+            let val1 = Math.floor((Math. random() * 255) + 1);
+            let val2 = Math.floor((Math. random() * 255) + 1);
+            let val3 = Math.floor((Math. random() * 255) + 1);
+            div1.setAttribute('style', `width: ${cuboPequeño}px; height: ${cuboPequeño}px; border: 1px solid white; background-color: rgb(${val1}, ${val2}, ${val3}, ${opacidad})`);
+            opacidad -= 0.05;
         })
     }     
 
