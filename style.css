@@ -9,13 +9,42 @@ body {
 
 }
 
+.container1 {
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 15px;
+    border: 20px solid white;
+
+}
 .container {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px;
+    margin-bottom: 40px;
     width: 530px;
     height: 530px;
-    border: 20px solid black;
+    border: 20px solid white;
     border-radius: 5%;
     background-color: black;
+}
+
+.titulo {
+    font-size: large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-size-adjust: 250px;
+}
+
+.boton1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    border: 5px solid #F9FAF8;
+    color: white;
+    width: 150px;
+    height: 60px;
+    font-size: large;
+
 }
