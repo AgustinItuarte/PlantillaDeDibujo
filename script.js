@@ -4,7 +4,7 @@ const btn = document.querySelector('.boton1')
 btn.addEventListener('click', () => { // Llama al prompt y ejecuta funciones para crear la cuadrilla
     eliminarCuadrilla();
     
-    let gridValor = prompt('Ingresa tamaño de la cuadricula:(maximo: 100x100)');
+    let gridValor = prompt('Ingresa tamaño de la cuadricula(maximo: 100x100)');
     calcularCuadrilla(gridValor);
 })
 
